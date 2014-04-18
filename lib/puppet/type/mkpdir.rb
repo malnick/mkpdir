@@ -15,15 +15,5 @@ Puppet::Type.newtype(:mkpdir) do
       end
     end
   end
-  newproperty (:dirpath) do
-    desc "The directory property for the resource"
-    isrequired
-    validate do |v|
-      dirpath = Pathname.new(v)
-      unless dirpath.absolute?
-        raise ArgumentError, "Path not absolute: #{dirpath}"
-      end
-    end
-  end
 end
 
