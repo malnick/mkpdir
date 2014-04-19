@@ -1,3 +1,4 @@
+# mkdir -p type
 require 'pathname'
 Puppet::Type.newtype(:mkpdir) do
   desc "I do the mkdir -p bitches"
