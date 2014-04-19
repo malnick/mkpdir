@@ -4,7 +4,7 @@ It does the 'mkdir -p'
 Usage:
 
 	mkpdir {'/tmp/test/testing/':
-		ensure  => present, # Or absent
-		path 	=> '/defaults/to/$title',
+		ensure  => present, 		  # Or absent
+		path 	=> '/defaults/to/$title', # $namevar
 		}
 
